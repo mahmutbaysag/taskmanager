@@ -1,14 +1,13 @@
-package com.example.taskmanager.controller;
+package org.example.taskmanager.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 public class HelloController {
 
     @GetMapping("/hello")
-    public String sayHello(){
-        return "Merhaba Dunya";
+    public String sayHello() {
+        return "Merhaba, Spring Boot calisiyor!";
     }
 }
